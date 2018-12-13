@@ -1,0 +1,27 @@
+extends ../template
+
+block content
+    div.wrapper
+        .info-control
+            div.control#previous(onclick='previous()')
+                i.fas.fa-caret-left
+            div.calendar-title#monthAndYear
+            div.control#next(onclick='next()')
+                i.fas.fa-caret-right
+            span.today Today
+        table#calendar
+            label#month
+            label#year
+            thead
+                tr
+                    th Mon
+                    th Tue
+                    th Wed
+                    th Thu
+                    th Fri
+                    th Sat
+                    th Sun
+            tbody#calendar-body
+        div
+
+

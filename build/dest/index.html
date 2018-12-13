@@ -1,0 +1,63 @@
+<!--	links-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="vendor/bulma/css/bulma.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-content">
+			<a class="header-content__button">Add</a>
+			<a class="header-content__button">Refresh</a>
+		</div>
+		<div class="header-search">
+			<i class="fas fa-search"></i>
+			<form>
+				<input class="header-search__input" type="text" placeholder="Event,data or customer">
+			</form>
+		</div>
+	</header>
+	<div class="wrapper">
+		<div class="info-control">
+			<div class="control" id="previous" onclick="previous()">
+				<i class="fas fa-caret-left"></i>
+			</div>
+			<div class="calendar-title" id="monthAndYear"></div>
+			<div class="control" id="next" onclick="next()">
+				<i class="fas fa-caret-right"></i>
+			</div>
+			<span class="today">Today</span>
+		</div>
+		<table id="calendar">
+			<label id="month"></label>
+			<label id="year"></label>
+			<thead>
+				<tr>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+					<th>Sun</th>
+				</tr>
+			</thead>
+			<tbody id="calendar-body"></tbody>
+		</table>
+		<div></div>
+	</div>
+	<!--block after-content-->
+	<!--include blocks/footer/footer-->
+	<script src="vendor/jquery.min.js"></script>
+	<script src="js/js.js"></script>
+</body>
+
+</html>

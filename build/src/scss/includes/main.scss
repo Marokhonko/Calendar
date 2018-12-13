@@ -1,0 +1,70 @@
+.wrapper {
+  width: 55%;
+  margin: 0 auto;
+  #calendar {
+    width: 100%;
+    margin-top: 15px;
+  }
+  th {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  td {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ebebeb;
+    //text-align: right;
+  }
+  padding-bottom: 20px;
+}
+
+.this-day {
+  background: #c2e4fe;
+}
+
+
+
+
+
+.info-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .control {
+    @extend .info-control;
+    justify-content: center;
+    i {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #dfdfdf;
+      text-align: center;
+      border-radius: 5px;
+      margin: 0 5px 0 5px;
+    }
+
+  }
+  .calendar-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}
+.today {
+  border: 1px solid #dfdfdf;
+  font-size: 10px;
+  color: gray;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px){
+  .wrapper {
+    td {
+      height: 50px;
+    }
+  }
+}
